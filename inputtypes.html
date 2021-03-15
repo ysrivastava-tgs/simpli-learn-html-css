@@ -1,0 +1,76 @@
+<style>
+    .myForm
+    {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px solid #ddd;
+        background-color: lightgrey;
+        padding: 1%;
+        width: 600px;
+        font-size: 0.8em;
+        box-sizing: border-box;
+    }
+    .myForm legend,label{
+        padding: 0;
+        font-weight: bold;
+    }
+    .myForm input,select,textarea{
+        display: block;
+        border: 1px solid #ccc;
+        width: 100%;
+        font-size: 0.9em;
+        padding: 0.3em;
+    }
+    .myForm button{
+        padding: 1em;
+        border-radius: 0.5em;
+        background: none;
+        font-weight: bold;
+        margin-top: 1em;
+    }
+    .myForm button:hover
+    {
+        background-color: limegreen;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <form class="myForm" action="/">
+        <p>
+            <label>Name <input type="text" name="customer_name"></label>
+        </p>
+        <p>
+            <label>Phone <input type="tel" name="customer_phone"></label>
+        </p>
+        <p>
+            <label>Email <input type="email" name="customer_email"></label>
+        </p>
+        <p>
+            <label>DOB <input type="datetime" name="customer_dob"></label>
+        </p>
+        <p>
+            <label>Address</label><br>
+            <textarea name="customer_address"></textarea>
+        </p>
+        <p>
+            <label>India</label>
+            <select id="country">
+                <option>INDIA</option>
+                <option>USA</option>
+                <option>CHINA</option>
+                <option>ENGLAND</option>
+            </select>
+        </p>
+        <p>
+            <legend>Gender</legend>
+            <p>Male:<input type="radio" name="gender"></p>
+            <p>Female:<input type="radio" name="gender"></p>
+        </p>
+        <p>
+            <legend>Services</legend>
+            <p><input type="checkbox" name="services">IT</p>
+            <p><input type="checkbox" name="services">Finance</p>
+            <p><input type="checkbox" name="services">Logistic</p>
+        </p>
+        <p><button type="submit">Submit</button></p>
+    </form>
+</body>
